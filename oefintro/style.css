@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+    
+    body{
+    background-color: dimgray;
+   
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    width: 10%;
+}
+
+
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+
+    padding-left: 20px;
+    
+}
+
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    background-image: url(beach.jpg);
+}
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+#ik:hover{
+    transform: rotate(180deg);
+}
+
+/*@keyframes example {
+    0% { transform:rotate(0deg)} 50% { transform:rotate(180deg)} 100% { transform:rotate(360deg)} 
+}*/
+
+div{
+     animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes illusion {
+     100% { transform:rotate(360deg)} 
+    
+}
+
+#bruv:hover{
+    animation-name: illusion;
+    animation-duration: 10s;
+}
+
